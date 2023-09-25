@@ -1,0 +1,104 @@
+/* Styles généraux pour les écrans de toutes les tailles */
+body {
+    font-family: Raleway, 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #eaa76f 0%, #f75c76 51%, #FF512F 100%);
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed; /* Ajoutez cette ligne */
+    top: 0; /* Fixez la barre en haut de la fenêtre */
+    width: 100%; /* La barre occupe toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurez-vous que la barre est au-dessus de tout autre contenu */
+}
+
+.navig h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+}
+
+.site-navigation ul, 
+.site-navigation li {
+    margin: 0; 
+    padding: 0;
+    margin-right: 20px;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+/* Style pour l'élément de navigation actif */
+.navbar .active {
+    background-color: #ff0000; /* Couleur de fond pour l'élément actif */
+    color: #ffffff; /* Couleur du texte pour l'élément actif */
+    font-weight: bold; /* Texte en gras pour l'élément actif */
+    padding: 10px ; /* Ajoutez un espacement vertical au bouton actif */
+    text-align: center; /* Centrez le texte verticalement */
+    border-radius: 5px; /* Ajoutez des coins arrondis au bouton actif */
+}
+
+/* Style pour le texte de l'élément de navigation actif */
+.navbar .active a {
+    color: #ffffff; /* Couleur du texte pour l'élément actif */
+    text-decoration: none; /* Supprimez la soulignement du lien si nécessaire */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px; /* Espace intérieur pour le contenu */
+    text-align: center; /* Alignement du texte au centre */
+    color: #333; /* Couleur du texte */
+}

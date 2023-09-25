@@ -1,0 +1,470 @@
+/* Styles généraux pour les écrans de toutes les tailles */
+body {
+    font-family: Raleway, 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #eaa76f 0%, #f75c76 51%, #FF512F 100%);
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+}
+
+h1 {
+    text-align: center;
+    color: #b30404;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Limiter la largeur du paragraphe */
+.desc{
+    max-width: 400px; /* Ajustez la largeur maximale selon vos préférences */
+    margin: 0 auto; /* Centrer le paragraphe horizontalement dans son conteneur */
+    text-align: justify; /* Justifier le texte dans le paragraphe */
+    text-justify: inter-word; /* Justifier en utilisant les espaces inter-mots */
+    word-wrap: break-word; /* Forcer la rupture de ligne si nécessaire */
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed; /* Ajoutez cette ligne */
+    top: 0; /* Fixez la barre en haut de la fenêtre */
+    width: 100%; /* La barre occupe toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurez-vous que la barre est au-dessus de tout autre contenu */
+}
+
+.container h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+}
+
+
+.site-navigation ul, 
+.site-navigation li {
+    margin: 0; 
+    padding: 0;
+    margin-right: 20px;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+/* Style pour l'élément de navigation actif */
+.navbar .active {
+    background-color: #ff0000; /* Couleur de fond pour l'élément actif */
+    color: #ffffff; /* Couleur du texte pour l'élément actif */
+    font-weight: bold; /* Texte en gras pour l'élément actif */
+    padding: 10px ; /* Ajoutez un espacement vertical au bouton actif */
+    text-align: center; /* Centrez le texte verticalement */
+    border-radius: 5px; /* Ajoutez des coins arrondis au bouton actif */
+}
+
+/* Style pour le texte de l'élément de navigation actif */
+.navbar .active a {
+    color: #ffffff; /* Couleur du texte pour l'élément actif */
+    text-decoration: none; /* Supprimez la soulignement du lien si nécessaire */
+}
+
+.bienvenue {
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.berline {
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    margin-left: 50px;
+}
+
+.berline-container {
+    color: black;
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    /* background-image: linear-gradient(45deg, #f75c76 0%, #f75c76 51%, #F09819 100%); */
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px; /* Espace intérieur autour du contenu */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour l'image */
+.berline img {
+    max-width: 500px; /* Ajuster la largeur de l'image comme vous le souhaitez */
+    /*height: auto;  Maintenir le rapport hauteur/largeur de l'image */
+    margin-right: 20px; /* Marge à droite pour l'espacement */
+    flex: 1; /* L'image prend autant de largeur que possible */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.berline-text {
+    flex: 1; /* Le texte (paragraphe et bouton) prend autant de largeur que possible */
+    text-align: left; /* Aligner le texte à gauche */
+    margin-left: 10px; /* Ajouter une marge à gauche pour l'espacement */
+}
+
+/* Style pour le paragraphe */
+.berline p {
+    font-size: 15px; /* Taille de la police du paragraphe */
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.mini {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments côte à côte */
+    align-items: center; /* Centrer verticalement les éléments */
+    justify-content: flex-end; /* Aligner le contenu à droite */
+    margin-right: 50px;
+}
+
+.mini-container {
+    color: black;
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px; /* Espace intérieur autour du contenu */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour l'image */
+.mini img {
+    max-width: 500px; /* Ajuster la largeur de l'image comme vous le souhaitez */
+    height: auto; /* Maintenir le rapport hauteur/largeur de l'image */
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* Style pour le paragraphe */
+.mini p {
+    font-size: 15px; /* Taille de la police du paragraphe */
+    margin-right: 50px; /* Marge à gauche pour l'espacement */
+    margin-left: 20px;
+}
+
+.sportive {
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    margin-left: 50px;
+}
+
+.sportive-container {
+    color: black;
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px; /* Espace intérieur autour du contenu */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour l'image */
+.sportive img {
+    max-width: 500px; /* Ajuster la largeur de l'image comme vous le souhaitez */
+    height: auto; /* Maintenir le rapport hauteur/largeur de l'image */
+    margin-right: 20px; /* Marge à droite pour l'espacement */
+    border-radius: 5px;
+}
+
+/* Style pour le paragraphe */
+.sportive p {
+    font-size: 15px; /* Taille de la police du paragraphe */
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.apropos p {
+    text-align:justify;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight: bold;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.modal-btn {
+    padding: 10px 14px;
+    font-size: 15px;
+    margin: 100px auto;
+    display: block; /* Assurez-vous que les boutons restent en ligne */
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.modal-container {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    margin-top: 20px;
+}
+
+#dialogDesc {
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 18px; /* Taille de la police du texte */
+}
+
+.modal-container.active {
+    visibility: visible;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.modal {
+    opacity: 0;
+    color: black;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    border: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacitu 0.4s 0.2s ease-out,
+    transform 0.4s 0.2 ease-out;
+}
+
+.close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.modal h1 {
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.modal p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px; /* Espace intérieur pour le contenu */
+    text-align: center; /* Alignement du texte au centre */
+    color: #333; /* Couleur du texte */
+}
+
+/* Styles généraux pour les écrans de toutes les tailles */
+
+/* Style pour les écrans de taille moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none; /* Supprimer l'arrière-plan en gradient pour économiser de l'espace */
+    }
+
+    /* Réduire la taille de la police pour les titres */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Ajuster la largeur maximale des paragraphes */
+    .desc {
+        max-width: 100%; /* Occuper toute la largeur de l'écran */
+        margin: 0 20px; /* Espacement sur les côtés */
+    }
+
+    /* Réduire la taille de la police pour les paragraphes */
+    .desc p {
+        font-size: 14px;
+    }
+
+    /* Centrer le texte dans la barre de navigation */
+    .site-navigation ul,
+    .site-navigation li {
+        text-align: center;
+    }
+
+    /* Ajouter un espace entre les éléments de navigation */
+    .site-navigation li {
+        margin: 1em;
+    }
+
+    /* Réduire la taille de la police pour les boutons */
+    .modal-btn {
+        font-size: 12px;
+    }
+
+    /* Centrer le texte dans les boutons */
+    .modal-btn {
+        text-align: center;
+    }
+}
+
+/* Style pour les écrans de petite taille (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    /* Réduire la taille de la police pour les titres */
+    h1 {
+        font-size: 20px;
+    }
+
+    /* Réduire la taille de la police pour les paragraphes */
+    .desc p {
+        font-size: 12px;
+    }
+
+    /* Réduire la taille de la police pour les boutons */
+    .modal-btn {
+        font-size: 10px;
+        padding: 10px 20px; /* Réduire l'espacement du bouton */
+    }
+}
+
+/* ... Autres styles spécifiques pour des tailles d'écran différentes ... */
+/* Autres styles généraux ... */
+
+/* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    /* Réarranger les éléments pour une meilleure adaptation à l'écran */
+    .site-header {
+        padding: .5em;
+    }
+
+    .site-navigation ul {
+        text-align: center;
+    }
+
+    .site-navigation li {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Autres ajustements pour la taille moyenne */
+}
+
+/* Styles pour les écrans de petite taille (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    /* Réarranger les éléments pour une meilleure adaptation à l'écran */
+    .site-header {
+        padding: .3em;
+    }
+
+    .site-navigation ul {
+        text-align: center;
+    }
+
+    .site-navigation li {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ajustements spécifiques pour les smartphones */
+    .bienvenue {
+        margin-top: 70px;
+    }
+
+    .berline, .mini, .sportive {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .berline img, .mini img, .sportive img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .berline p, .mini p, .sportive p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Autres ajustements pour les petites tailles */
+}

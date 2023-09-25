@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+          <h1><a href="#">CarsLand</a></h1>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="navbar">
+            <li class="active"><a href="index.html">Accueil</a></li> 
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a id="connexion" href="connexion.html">Connexion</a></li>  
+          </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bienvenue">
+            <p class="p">Bienvenue sur votre site de voitures préféré !</p>
+            <p class="info">Ici vous trouverez différentes informations sur des voitures de sport.</p>
+        </div>
+    </section>
+
+    <section class="berline">
+        <div class="berline-container">
+            <img src="img/berline-sport-blanche-luxe-se-tenant-trace-course-vue-laterale-avant.jpg" alt="lamborghini huracan blanche">
+            <h1>Lamborghini Huracan</h1>
+            <p class="desc">La Lamborghini Huracan est une supercar emblématique qui incarne la fusion parfaite de la puissance et du style. Avec son moteur V10 rugissant, elle délivre une expérience de conduite exaltante, propulsant les amateurs d'automobiles à des vitesses impressionnantes en un instant. Son design agressif et futuriste attire tous les regards, avec des lignes sculptées et des portières en élytre qui ajoutent une touche de sophistication. À l'intérieur, la Huracan offre un habitacle luxueux, alliant confort et technologie de pointe, garantissant ainsi une expérience de conduite inoubliable. En somme, la Lamborghini Huracan demeure une icône indémodable de l'industrie automobile, symbolisant la quintessence du prestige et de la performance.</p>
+        </div>
+    </section>
+
+    <button class="modal-btn modal-trigger" data-modal="modal1">En savoir plus</button>
+
+    <div class="modal-container" id="modal1">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+            <button 
+            aria-label="close modal"
+            class="close-modal modal-trigger">X</button>
+            <h1 id="modalTitle">Lamborghini Huracan</h1>
+            <p id="dialogDesc"><strong>FICHE TECHNIQUE</strong></p>
+            <table>
+                <tr>
+                    <th>Caractéristique</th>
+                    <th>Valeur</th>
+                </tr>
+                <tr>
+                    <td>Modèle</td>
+                    <td>Lamborghini Huracan</td>
+                </tr>
+                <tr>
+                    <td>Moteur</td>
+                    <td>V10</td>
+                </tr>
+                <tr>
+                    <td>Puissance</td>
+                    <td>630 chevaux</td>
+                </tr>
+                <tr>
+                    <td>0-100 km/h</td>
+                    <td>3,1 secondes</td>
+                </tr>
+                <tr>
+                    <td>Vitesse maximale</td>
+                    <td>325 km/h</td>
+                </tr>
+                <tr>
+                    <td>Prix de base</td>
+                    <td>À partir de 210 000 €</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <section class="mini">
+        <div class="mini-container">
+            <p class="desc">La Porsche 911 GT3 est une légende de l'industrie automobile, célébrée pour sa performance et sa tenue de route exceptionnelles. Sous son capot arrière se trouve un moteur flat-six atmosphérique qui produit un son envoûtant et une puissance impressionnante, propulsant la GT3 à des vitesses fulgurantes. Sa transmission manuelle à six rapports ou sa boîte PDK à double embrayage permettent une expérience de conduite personnalisée. Dotée d'une aérodynamique raffinée, d'un châssis sport et d'un intérieur épuré orienté vers le conducteur, la Porsche 911 GT3 offre une expérience de conduite authentique et mémorable, faisant d'elle une icône parmi les voitures de sport haut de gamme.</p>
+            <h1>Porsche 911 GT3</h1>
+            <img src="img/mini-coupe-rouge-gare-dans-port-feux-au-xenon-vue-arriere.jpg" alt="porsche 911 gt3">
+        </div>      
+    </section>
+
+    <button class="modal-btn modal-trigger" data-modal="modal2">En savoir plus</button>
+
+    <div class="modal-container" id="modal2">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+            <button 
+            aria-label="close modal"
+            class="close-modal modal-trigger">X</button>
+            <h1 id="modalTitle">Porsche 911 GT3</h1>
+            <p id="dialogDesc"><strong>FICHE TECHNIQUE</strong></p>
+            <table>
+                <tr>
+                    <th>Caractéristique</th>
+                    <th>Valeur</th>
+                </tr>
+                <tr>
+                    <td>Modèle</td>
+                    <td>Porsche 911 GT3</td>
+                </tr>
+                <tr>
+                    <td>Moteur</td>
+                    <td>Flat-six atmosphérique</td>
+                </tr>
+                <tr>
+                    <td>Puissance</td>
+                    <td>502 chevaux</td>
+                </tr>
+                <tr>
+                    <td>0-100 km/h</td>
+                    <td>3,4 secondes</td>
+                </tr>
+                <tr>
+                    <td>Vitesse maximale</td>
+                    <td>320 km/h</td>
+                </tr>
+                <tr>
+                    <td>Prix de base</td>
+                    <td>À partir de 160 000 €</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <section class="sportive">
+        <div class="class sportive-container">
+            <img src="img/voiture-sport-jaune-autotuning-noir-route.jpg" alt="chevrolet camaro 2ss 2014">
+            <h1>Chevrolet Camaro 2SS</h1>
+            <p class="desc">La Chevrolet Camaro 2SS incarne l'esprit de la muscle car américaine avec une puissance inégalée. Sous son capot se cache un V8 suralimenté qui délivre une performance éblouissante, propulsant cette bête sur quatre roues à des vitesses incroyables. Son design agressif et ses lignes athlétiques attirent tous les regards, tandis que l'intérieur offre un mélange de confort et de technologies modernes. La Camaro 2SS offre également une expérience de conduite dynamique grâce à une suspension sport ajustable, en faisant une voiture idéale pour les amateurs de performances brutes et de sensations fortes sur la route.
+            </p>
+        </div> 
+    </section>
+
+    <button class="modal-btn modal-trigger" data-modal="modal3">En savoir plus</button>
+
+    <div class="modal-container" id="modal3">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+            <button 
+            aria-label="close modal"
+            class="close-modal modal-trigger">X</button>
+            <h1 id="modalTitle">Chevrolet Camaro 2SS</h1>
+            <p id="dialogDesc"><strong>FICHE TECHNIQUE</strong></p>
+            <table>
+                <tr>
+                    <th>Caractéristique</th>
+                    <th>Valeur</th>
+                </tr>
+                <tr>
+                    <td>Modèle</td>
+                    <td>Chevrolet Camaro 2SS</td>
+                </tr>
+                <tr>
+                    <td>Moteur</td>
+                    <td>V8 suralimenté</td>
+                </tr>
+                <tr>
+                    <td>Puissance</td>
+                    <td>455 chevaux</td>
+                </tr>
+                <tr>
+                    <td>0-100 km/h</td>
+                    <td>4,0 secondes</td>
+                </tr>
+                <tr>
+                    <td>Vitesse maximale</td>
+                    <td>250 km/h</td>
+                </tr>
+                <tr>
+                    <td>Prix de base</td>
+                    <td>À partir de 45 000 €</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>2023 @CarsLand</p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
